@@ -37,26 +37,26 @@ public class ProbabilityOfElementInSets {
     public ArrayList<Double> calculateProbability(ArrayList<Integer> list){
         int[] a = new int[6];
         for(int i: list){
-            if(i==1)
-                a[0]+=1;
+            if(i==1)                                                    
+                a[0]+=1;                                                                //incrementing the Oth index of array if i=1
             else if (i==2)
-                a[1]+=1;
+                a[1]+=1;                                                                //incrementing the 1st index of array if i=2
             else if(i==3)
-                a[2]+=1;
+                a[2]+=1;                                                                //incrementing the 2nd index of array if i=3
             else if (i==4)
-                a[3]+=1;
+                a[3]+=1;                                                                //incrementing the 3rd index of array if i=4
             else if (i==5)
-                a[4]+=1;
+                a[4]+=1;                                                                //incrementing the 4th index of array if i=5
             else if (i==6)
-                a[5]+=1;
+                a[5]+=1;                                                                //incrementing the 5th index of array if i=6
         }
         ArrayList<Double> probability = new ArrayList<>();
-        probability.add((double) ((double)a[0]/list.size()));
-        probability.add((double) ((double)a[1]/list.size()));
-        probability.add((double) ((double)a[2]/list.size()));
-        probability.add((double) ((double)a[3]/list.size()));
-        probability.add((double) ((double)a[4]/list.size()));
-        probability.add((double) ((double)a[5]/list.size()));
+        probability.add((double) ((double)a[0]/list.size()));                           //finding probability at a[0]
+        probability.add((double) ((double)a[1]/list.size()));                           //finding probability at a[1]
+        probability.add((double) ((double)a[2]/list.size()));                           //finding probability at a[2]
+        probability.add((double) ((double)a[3]/list.size()));                           //finding probability at a[3]
+        probability.add((double) ((double)a[4]/list.size()));                           //finding probability at a[4]
+        probability.add((double) ((double)a[5]/list.size()));                           //finding probability at a[5]
 
 
         return probability;
@@ -75,30 +75,30 @@ public class ProbabilityOfElementInSets {
 
         ProbabilityOfElementInSets obj = new ProbabilityOfElementInSets();
 
-        ArrayList<Double> P1 = obj.calculateProbability(object.l1);
-        ArrayList<Double> P2 = obj.calculateProbability(object.l2);
-        ArrayList<Double> P3 = obj.calculateProbability(object.l3);
-        ArrayList<Double> P4 = obj.calculateProbability(object.l4);
-        ArrayList<Double> P5 = obj.calculateProbability(object.l5);
-        ArrayList<Double> P6 = obj.calculateProbability(object.l6);
+        ArrayList<Double> P1 = obj.calculateProbability(object.l1);                     //finding probability at p1
+        ArrayList<Double> P2 = obj.calculateProbability(object.l2);                     //finding probability at p2
+        ArrayList<Double> P3 = obj.calculateProbability(object.l3);                     //finding probability at p3
+        ArrayList<Double> P4 = obj.calculateProbability(object.l4);                     //finding probability at p4
+        ArrayList<Double> P5 = obj.calculateProbability(object.l5);                     //finding probability at p5
+        ArrayList<Double> P6 = obj.calculateProbability(object.l6);                     //finding probability at p6
 
         for (int i=0; i<P1.size(); i++)
-            System.out.println("Probability of "+i+" in L1: "+P1.get(i));
+            System.out.println("Probability of "+i+" in L1: "+P1.get(i));               //getting the size of neighbouring list
         System.out.println();
         for (int i=0; i<P2.size(); i++)
-            System.out.println("Probability of "+i+" in L2: "+P2.get(i));
+            System.out.println("Probability of "+i+" in L2: "+P2.get(i));               //getting the size of neighbouring list
         System.out.println();
         for (int i=0; i<P3.size(); i++)
-            System.out.println("Probability of "+i+" in L3: "+P3.get(i));
+            System.out.println("Probability of "+i+" in L3: "+P3.get(i));               //getting the size of neighbouring list
         System.out.println();
         for (int i=0; i<P4.size(); i++)
-            System.out.println("Probability of "+i+" in L4: "+P4.get(i));
+            System.out.println("Probability of "+i+" in L4: "+P4.get(i));               //getting the size of neighbouring list
         System.out.println();
         for (int i=0; i<P5.size(); i++)
-            System.out.println("Probability of "+i+" in L5: "+P5.get(i));
+            System.out.println("Probability of "+i+" in L5: "+P5.get(i));               //getting the size of neighbouring list
         System.out.println();
         for (int i=0; i<P6.size(); i++)
-            System.out.println("Probability of "+i+" in L6: "+P6.get(i));
+            System.out.println("Probability of "+i+" in L6: "+P6.get(i));               //getting the size of neighbouring list
 
     }
 }
